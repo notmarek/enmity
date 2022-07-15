@@ -3,7 +3,7 @@ export const AddonChannels = {
   Themes: ['961782176062509117', '968223084643487744']
 };
 
-export const BadgesDomain = 'https://raw.githubusercontent.com/enmity-mod/badges/main/';
+export const BadgesDomain = 'https://raw.githubusercontent.com/notmarek/enmitybadges/main/';
 
 export enum Times {
   HOUR = 60 * 60 * 1000
