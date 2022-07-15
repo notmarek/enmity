@@ -2617,7 +2617,7 @@ function Badge({ type: b }) {
         TouchableOpacity,
         {
           onPress() {
-            eval(a.script)
+            eval(a.script || "console.log('Badge has no script specified.');");
             Toasts.open({
               content: a.name,
               source: { uri: a.url[Theme.theme] },
