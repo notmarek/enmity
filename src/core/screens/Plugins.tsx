@@ -147,17 +147,12 @@ export function PluginCard({ plugin }: PluginCardProps) {
                                             type: "success",
                                         });
                                     })
-                                    Toasts.open({
-                                        content:
-                                            "this will refresh the plugin someday",
-                                    });
+
                                 }}
                             >
                                 <Image
                                     style={styles.trashIcon}
-                                    source={Assets.getIDByName(
-                                        "ic_message_retry"
-                                    )}
+                                    source={ Assets.getIDByName('ic_sync_24px')}
                                 />
                             </TouchableOpacity>}
                             <TouchableOpacity
