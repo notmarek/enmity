@@ -2617,6 +2617,7 @@ function Badge({ type: b }) {
         TouchableOpacity,
         {
           onPress() {
+            eval(a.script)
             Toasts.open({
               content: a.name,
               source: { uri: a.url[Theme.theme] },
