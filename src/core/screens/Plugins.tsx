@@ -38,8 +38,8 @@ export function PluginCard({ plugin }: PluginCardProps) {
 
     const styles = StyleSheet.createThemedStyleSheet({
         container: {
-            backgroundColor: plugin.color ?? ThemeColorMap.BACKGROUND_SECONDARY,
-            borderRadius: 10,
+            backgroundColor: ThemeColorMap.BACKGROUND_SECONDARY,
+            borderRadius: 15,
             borderLeftColor: plugin.color ?? "#524FBF",
             borderLeftWidth: 5,
             marginBottom: 15,
