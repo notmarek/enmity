@@ -1,0 +1,22 @@
+name: Build a bleeding-edge release
+on: [push]
+jobs:
+  build:
+    name: "Build bleeding-edge"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm install
+      - name: Run build
+        run: npm run build
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[Bot] build"
+          commit_user_name: BuildBot
+          commit_user_email: no-reply@notmarek.com
+          commit_author: BuildBot <no-reply@notmarek.com>
